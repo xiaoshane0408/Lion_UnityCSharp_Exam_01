@@ -6,6 +6,7 @@ public class Q4_Runner : MonoBehaviour
 {
     Rigidbody rig;
     Animator ani;
+    public AudioSource aud;
     bool gameover;
 
     public delegate void DelegateRunner();
@@ -15,6 +16,7 @@ public class Q4_Runner : MonoBehaviour
     {
         rig = GetComponent<Rigidbody>();
         ani = GetComponent<Animator>();
+        aud = GetComponent<AudioSource>();
     }
 
     void Update()
